@@ -3,7 +3,6 @@
 - 🌱 I’m currently learning as Fullstack Developer
 - I'm a Web Developer
 - I'm working on HTML, CSS, Javascript, PHP, MySql, NodeJs, CodeIgniter, Laravel.
-- I'm ready to Hire for FULLTIME or HALFTIME working
 - 📫 How to reach me : 
 - Whatsapp : 085838707828
 - Email : mimamch28@gmail.com
