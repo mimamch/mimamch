@@ -1,9 +1,22 @@
-- 👋 Hi, I’m @mimamch
-- 👀 I’m interested in Web Development
-- 🌱 I’m currently learning as Fullstack Developer
-- I'm a Web Developer
-- I'm working on HTML, CSS, Javascript, PHP, MySql, NodeJs, CodeIgniter, Laravel.
-- 📫 How to reach me : 
-- Whatsapp : 085838707828
-- Email : mimamch28@gmail.com
+# Who I am ? 
+- 👋 Hi, I’m Muhammad Imam Choirudin (mimamch)
+- 👀 I’m Full-Stack JavaScript Developer
+- 🌱 I’m currently learning MERN Stack
+---
+# I'm working on :
+- ReactJS
+- NextJS
+- React Native
+- TailwindCSS
+
+- NodeJS
+- ExpressJS
+
+- MongoDB
+- MySQL
+
+# How to reach me?
+
+- 📫 You can reach me via : 
+- email : mimamch28@gmail.com
 
