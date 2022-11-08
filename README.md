@@ -1,19 +1,22 @@
 # Who I am ? 
 - 👋 Hi, I’m Muhammad Imam Choirudin (mimamch)
-- 👀 I’m Full-Stack JavaScript Developer
+- 👀 I’m Full-Stack Mobile & Web Developer
 - 🌱 I’m currently learning MERN Stack
 ---
 # I'm working on :
 - ReactJS
 - NextJS
-- React Native
-- TailwindCSS
+
+- Flutter
+- Dart
 
 - NodeJS
 - ExpressJS
 
 - MongoDB
 - MySQL
+- PostgreSQL
+- PrismaORM
 
 # How to reach me?
 
