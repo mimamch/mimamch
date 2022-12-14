@@ -1,7 +1,6 @@
 # Who I am ? 
 - 👋 Hi, I’m Muhammad Imam Choirudin (mimamch)
 - 👀 I’m Full-Stack Mobile & Web Developer
-- 🌱 I’m currently learning MERN Stack
 ---
 # I'm working on :
 - ReactJS
