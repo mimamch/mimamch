@@ -1,24 +1,16 @@
-# Who I am ? 
-- 👋 Hi, I’m Muhammad Imam Choirudin (mimamch)
-- 👀 I’m Full-Stack Mobile & Web Developer
----
-# I'm working on :
-- ReactJS
-- NextJS
 
-- Flutter
-- Dart
+# MImamCh
 
-- NodeJS
-- ExpressJS
+I'm Full-stack Web & Mobile Developer.
+Likes to writing tidy code, easy to read, easy to maintain, and high security.
 
-- MongoDB
-- MySQL
-- PostgreSQL
-- PrismaORM
+## 📂 Open Source Project
+- [mimamch/wa-multi-session](https://github.com/mimamch/wa-multi-session) - 🔥 Multi Session Whatsapp Library
+- [mimamch/wa-gateway](https://github.com/mimamch/wa-multi-session) - ⭐️ Multi Session Whatsapp Gateway API
 
-# How to reach me?
+## ⚙️ Project
+- [Jualin Center](https://play.google.com/store/apps/details?id=com.jualincenter.app) - PPOB App
 
-- 📫 You can reach me via : 
-- email : mimamch28@gmail.com
-
+## 📪 Reach Me at
+- Email : [mimamch28@gmail.com](mailto:mimamch28@gmail.com)
+- LinkedIn : [Muhammad Imam Choirudin](https://www.linkedin.com/in/muhammad-imam-choirudin-129566233/)
