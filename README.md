@@ -13,7 +13,7 @@ Likes to writing tidy code, easy to read, easy to maintain, and high security.
 
 ## 📪 Reach Me at
 - Email : [mimamch28@gmail.com](mailto:mimamch28@gmail.com)
-- LinkedIn : [Muhammad Imam Choirudin](https://www.linkedin.com/in/muhammad-imam-choirudin-129566233/)
+- LinkedIn : [Muhammad Imam Choirudin](https://www.linkedin.com/in/mimamch/)
 
 
 ## 📚 Language & Tech Stack
