@@ -1,8 +1,7 @@
 
 # MImamCh
 
-I'm Full-stack Web & Mobile Developer.
-Likes to writing tidy code, easy to read, easy to maintain, and high security.
+Full stack engineer with experience in the tech industry. Passionate about building high-quality software that solves real-world problems. Strong technical skills in a variety of programming languages and frameworks. Experience working on a variety of projects, including web applications, mobile apps, restful api, and deployments.
 
 ## 📂 Open Source Project
 - [@mimamch/wa-multi-session](https://github.com/mimamch/wa-multi-session) - 🔥 Multi Session Whatsapp Library
