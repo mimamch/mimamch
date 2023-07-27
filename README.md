@@ -1,5 +1,5 @@
 
-# MImamCh
+# @mimamch/mimamch
 
 Full stack engineer with experience in the tech industry. Passionate about building high-quality software that solves real-world problems. Strong technical skills in a variety of programming languages and frameworks. Experience working on a variety of projects, including web applications, mobile apps, restful api, and deployments.
 
