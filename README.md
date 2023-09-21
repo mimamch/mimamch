@@ -9,8 +9,6 @@ Full stack engineer with experience in the tech industry. Passionate about build
 - [@mimamch/cmd](https://github.com/mimamch/cmd) - ⭐️ Command Processing Library
 - [@mimamch/express-typescript](https://github.com/mimamch/express-typescript) - ⭐️ ExpressJS Boilerplate
 
-## ⚙️ Project
-- [Jualin Center](https://play.google.com/store/apps/details?id=com.jualincenter.app) - PPOB App
 
 ## 📪 Reach Me at
 - Email : [mimamch28@gmail.com](mailto:mimamch28@gmail.com)
