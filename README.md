@@ -16,4 +16,4 @@ Full stack engineer with experience in the tech industry. Passionate about build
 
 
 ## 📚 Language & Tech Stack
-![Tech Stack](https://skillicons.dev/icons?i=dart,flutter,,nodejs,express,prisma,mongo,postgres,,react,next)
+![Tech Stack](https://skillicons.dev/icons?i=dart,flutter,,ts,go,,react,next,,docker,nginx,cloudflare)
