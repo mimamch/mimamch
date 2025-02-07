@@ -6,8 +6,8 @@ Full stack engineer with experience in the tech industry. Passionate about build
 ## 📂 Open Source Project
 - [@mimamch/wa-multi-session](https://github.com/mimamch/wa-multi-session) - 🔥 Multi Session Whatsapp Library
 - [@mimamch/wa-gateway](https://github.com/mimamch/wa-gateway) - ⭐️ Multi Session Whatsapp Gateway API
-- [@mimamch/cmd](https://github.com/mimamch/cmd) - ⭐️ Command Processing Library
-- [@mimamch/express-typescript](https://github.com/mimamch/express-typescript) - ⭐️ ExpressJS Boilerplate
+- [@mimamch/qontak](https://github.com/mimamch/qontak) - ⭐️ Mekari Qontak "Whatsapp" Package Library
+- [@mimamch/news_app_clean_architecture](https://github.com/mimamch/news_app_clean_architecture) - ⭐️ Flutter Example for Clean Architecture
 
 
 ## 📪 Reach Me at
@@ -15,5 +15,3 @@ Full stack engineer with experience in the tech industry. Passionate about build
 - LinkedIn : [Muhammad Imam Choirudin](https://www.linkedin.com/in/mimamch/)
 
 
-## 📚 Language & Tech Stack
-![Tech Stack](https://skillicons.dev/icons?i=dart,flutter,,ts,go,,react,next,,docker,nginx,cloudflare)
