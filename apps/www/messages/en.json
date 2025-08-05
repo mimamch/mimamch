@@ -1,0 +1,11 @@
+{
+  "layouts": {
+    "header": {
+      "title": "mimamch"
+    }
+  },
+  "HomePage": {
+    "title": "mimamch",
+    "about": "Go to the about page"
+  }
+}
