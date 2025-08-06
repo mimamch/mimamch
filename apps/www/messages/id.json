@@ -2,15 +2,15 @@
   "layouts": {
     "header": {
       "title": "mimamch",
-      "language": "English 🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      "language": "Indonesian 🇮🇩"
     }
   },
   "home": {
-    "my_name_is": "My name is",
-    "i_am_a": "I'm a",
+    "my_name_is": "Nama saya adalah",
+    "i_am_a": "Saya seorang",
     "fullstack_developer": "Full Stack Developer",
     "frontend_developer": "Frontend Developer",
     "backend_developer": "Backend Developer",
-    "send_me_email": "Send me email."
+    "send_me_email": "Kirimi saya email."
   }
 }

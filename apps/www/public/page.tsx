@@ -32,12 +32,10 @@ export default function Home() {
           <Header />
 
           <div className="container relative mx-auto flex h-[calc(100vh-6rem)] w-full items-center px-4">
-            <div className="grid w-full grid-cols-12 items-center gap-y-10 md:gap-y-0">
+            <div className="grid w-full grid-cols-12 gap-y-10 md:gap-y-0">
               <div className="order-2 col-span-12 md:order-1 md:col-span-8">
-                <p className="text-xl font-semibold md:text-2xl">
-                  {t("my_name_is")},
-                </p>
-                <h1 className="text-3xl font-bold md:text-4xl">
+                <p className="text-2xl font-semibold">{t("my_name_is")},</p>
+                <h1 className="text-4xl font-bold">
                   <GradientText
                     colors={[
                       "#40ffaa",
@@ -54,14 +52,14 @@ export default function Home() {
                   </GradientText>
                 </h1>
                 <div className="mt-2 flex items-center gap-2">
-                  <p className="text-xl md:text-2xl">{t("i_am_a")}</p>
+                  <p className="text-2xl">{t("i_am_a")}</p>
                   <RotatingText
                     texts={[
                       t("fullstack_developer"),
                       t("backend_developer"),
                       t("frontend_developer"),
                     ]}
-                    className="justify-center overflow-hidden rounded-sm border-2 border-gray-600 bg-gray-800/50 px-4 py-0.5 text-xl backdrop-blur-sm md:text-2xl"
+                    className="justify-center overflow-hidden rounded-sm border-2 border-gray-600 bg-gray-800/50 px-4 py-0.5 text-2xl backdrop-blur-sm"
                     staggerFrom={"last"}
                     initial={{ y: "100%" }}
                     animate={{ y: 0 }}
@@ -100,6 +98,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="order-1 col-span-12 md:order-2 md:col-span-4">
+                {/* <div className="aspect-square size-full rounded-full bg-gray-300"></div> */}
                 <PixelTransition
                   firstContent={
                     <Image
@@ -127,7 +126,7 @@ export default function Home() {
                   gridSize={12}
                   pixelColor="#101828"
                   animationStepDuration={0.2}
-                  className="mx-auto aspect-square w-3/4 rounded-full p-6 md:w-full"
+                  className="rounded-full"
                 />
               </div>
             </div>

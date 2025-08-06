@@ -1,5 +1,5 @@
 "use client";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import {
   ChevronDown,
@@ -9,6 +9,7 @@ import {
   XIcon,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
 type BaseMenu = {
@@ -26,32 +27,44 @@ export default function Header() {
 
   const [open, setOpen] = useState(false);
 
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  function onLocaleChange(locale: string) {
+    const nextLocale = locale;
+    window.location.replace(
+      `/${nextLocale}${pathname}${searchParams.toString() ? `?${searchParams.toString()}` : ""}`,
+    );
+  }
+
   const menus: Menu[] = [
     { title: "Home", href: "#" },
     { title: "Projects", href: "#" },
-    {
-      title: "Hello",
-      submenu: [
-        { title: "Blogs", href: "#" },
-        { title: "Gallerys", href: "#" },
-        { title: "FAQs", href: "#" },
-      ],
-    },
     { title: "About", href: "#" },
-    { title: "Contact", href: "#" },
+    { title: "Contact Me", href: "#" },
     {
-      title: "More",
+      title: t("header.language"),
       submenu: [
-        { title: "Blog", href: "#" },
-        { title: "Gallery", href: "#" },
-        { title: "FAQ", href: "#" },
+        {
+          title: "English 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+          onClick(e) {
+            e.preventDefault();
+            onLocaleChange("en");
+          },
+        },
+        {
+          title: "Indonesian 🇮🇩",
+          onClick(e) {
+            e.preventDefault();
+            onLocaleChange("id");
+          },
+        },
       ],
     },
-    { title: "Contact Me", href: "#" },
   ];
 
   return (
-    <div className="sticky top-0 px-2 py-2">
+    <div className="container sticky top-0 z-[10] mx-auto px-2 py-2">
       {open && (
         <div
           className="fixed inset-0 z-[0]"
@@ -59,7 +72,7 @@ export default function Header() {
         ></div>
       )}
       <nav className="relative">
-        <div className="flex justify-between rounded-full border bg-gray-100/80 px-4 py-2 shadow-lg before:absolute before:inset-0 before:z-[-1] before:backdrop-blur-sm dark:bg-gray-800/90">
+        <div className="flex justify-between rounded-full bg-gray-100/80 px-4 py-2 shadow-lg before:absolute before:inset-0 before:z-[-1] before:rounded-full before:backdrop-blur-sm dark:border-2 dark:bg-gray-900/80">
           <Link href={"/"}>
             <span className="text-lg font-semibold">{t("header.title")}</span>
           </Link>
@@ -70,18 +83,19 @@ export default function Header() {
                 if (menu.submenu && menu.submenu.length) {
                   return (
                     <div className="group" key={index}>
-                      <button className="block cursor-pointer rounded px-2 py-1 transition duration-200 hover:underline">
+                      <button className="block cursor-pointer text-nowrap rounded px-2 py-1 transition duration-200 hover:underline">
                         {menu.title}{" "}
                         <ChevronDown className="inline-flex size-4" />
                       </button>
                       <div className="absolute hidden pt-2 group-hover:block">
-                        <div className="bg-gray-100/80 p-4 shadow-lg backdrop-blur-sm dark:bg-gray-800/80">
+                        <div className="bg-gray-100/80 p-4 shadow-lg backdrop-blur-sm dark:bg-gray-900/80">
                           <ul>
                             {menu.submenu.map((item, i) => (
                               <li key={i}>
                                 <Link
                                   href={item.href ?? ""}
-                                  className="block rounded px-2 py-1 transition duration-200 hover:underline"
+                                  className="block text-nowrap rounded px-2 py-1 transition duration-200 hover:underline"
+                                  onClick={item.onClick}
                                 >
                                   {item.title}
                                 </Link>
@@ -97,7 +111,8 @@ export default function Header() {
                   <li key={index}>
                     <Link
                       href={menu.href ?? ""}
-                      className="block rounded px-2 py-1 transition duration-200 hover:underline"
+                      className="block text-nowrap rounded px-2 py-1 transition duration-200 hover:underline"
+                      onClick={menu.onClick}
                     >
                       {menu.title}
                     </Link>
@@ -107,6 +122,7 @@ export default function Header() {
             </ul>
           </div>
 
+          {/* Mobile menu button */}
           <div className="md:hidden">
             <div className={cn("flex items-center")}>
               {open ? (
@@ -123,10 +139,12 @@ export default function Header() {
             </div>
           </div>
         </div>
+
+        {/* Mobile menu */}
         <ul
           className={cn(
             !open && "hidden md:block",
-            "absolute left-0 mt-2 w-full rounded-lg border bg-gray-100/80 p-4 shadow-lg backdrop-blur-sm md:hidden md:hover:block dark:bg-gray-800/90",
+            "absolute left-0 z-10 mt-2 w-full rounded-lg border bg-gray-100/80 p-4 shadow-lg backdrop-blur-sm md:hidden md:hover:block dark:bg-gray-900/80",
           )}
         >
           {menus.map((menu, index) => (
@@ -147,6 +165,7 @@ function RenderMenu({ menu }: { menu: Menu }) {
       <Link
         href={menu.href ?? ""}
         className="flex rounded px-2 py-1 transition duration-200 hover:underline"
+        onClick={menu.onClick}
       >
         {menu.title}
       </Link>
@@ -177,7 +196,6 @@ function RenderMenu({ menu }: { menu: Menu }) {
 }
 
 function RenderSubMenu({ submenu }: { submenu: BaseMenu[] }) {
-  const [open, setOpen] = useState(false);
   return (
     <ul className="mt-2 space-y-1">
       {submenu.map((item, index) => (
@@ -185,6 +203,7 @@ function RenderSubMenu({ submenu }: { submenu: BaseMenu[] }) {
           <Link
             href={item.href ?? ""}
             className="block rounded px-2 py-1 transition duration-200 hover:underline"
+            onClick={item.onClick}
           >
             {item.title}
           </Link>
