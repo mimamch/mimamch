@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { gsap } from "gsap";
 import { InertiaPlugin } from "gsap/InertiaPlugin";
@@ -44,8 +46,11 @@ function hexToRgb(hex: string) {
   const m = hex.match(/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i);
   if (!m) return { r: 0, g: 0, b: 0 };
   return {
+    // @ts-expect-error auto generated
     r: parseInt(m[1], 16),
+    // @ts-expect-error auto generated
     g: parseInt(m[2], 16),
+    // @ts-expect-error auto generated
     b: parseInt(m[3], 16),
   };
 }

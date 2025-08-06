@@ -3,7 +3,6 @@ import {
   AnimatePresence,
   motion,
   Transition,
-  type AnimationControls,
   type Target,
   type TargetAndTransition,
   type VariantLabels,
@@ -36,7 +35,7 @@ export interface RotatingTextProps
   texts: string[];
   transition?: Transition;
   initial?: boolean | Target | VariantLabels;
-  animate?: boolean | VariantLabels | AnimationControls | TargetAndTransition;
+  animate?: boolean | VariantLabels | TargetAndTransition;
   exit?: Target | VariantLabels;
   animatePresenceMode?: "sync" | "wait";
   animatePresenceInitial?: boolean;
@@ -90,7 +89,7 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
     };
 
     const elements = useMemo(() => {
-      const currentText: string = texts[currentTextIndex];
+      const currentText: string = texts[currentTextIndex]!;
       if (splitBy === "characters") {
         const words = currentText.split(" ");
         return words.map((word, i) => ({
