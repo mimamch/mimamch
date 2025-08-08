@@ -75,7 +75,7 @@ export default async function RootLayout({
         >
           <NextIntlClientProvider>
             {children}
-            <Toaster />;
+            <Toaster />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
