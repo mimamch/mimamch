@@ -83,6 +83,21 @@ export default function Home() {
                     <MailIcon className="mr-1 inline" /> {t("send_me_email")}
                   </Link>
                   <Link
+                    href={"https://www.linkedin.com/in/mimamch/"}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className={buttonVariants({})}
+                  >
+                    <Image
+                      src={"/linkedin.svg"}
+                      alt="linkedin"
+                      width={20}
+                      height={20}
+                      className="size-5"
+                    />{" "}
+                    LinkedIn
+                  </Link>
+                  <Link
                     href={"https://github.com/mimamch"}
                     target="_blank"
                     rel="noreferrer noopener"

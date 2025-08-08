@@ -6,11 +6,31 @@
     }
   },
   "home": {
-    "my_name_is": "My name is",
+    "my_name_is": "Hi there! 👋 My name is",
     "i_am_a": "I'm a",
     "fullstack_developer": "Full Stack Developer",
     "frontend_developer": "Frontend Developer",
     "backend_developer": "Backend Developer",
     "send_me_email": "Send me email."
+  },
+  "bcrypt_generator": {
+    "title": "Bcrypt Generator",
+    "description": "Generate Bcrypt hashes for your passwords.",
+    "password_label": "Enter String to Hash",
+    "password_placeholder": "e.g. mypassword123",
+    "hash_label": "Generated Hash",
+    "salt": "Salt",
+    "generate_button": "Generate Hash",
+    "copy_button": "Copy to Clipboard",
+    "copy_success": "Hash copied to clipboard!",
+
+    "compare_title": "Compare Encrypted Password",
+    "compare_description": "Check if a password matches a Bcrypt hash.",
+    "compare_password_label": "Encrypted Password",
+    "compare_hash_label": "Enter Bcrypt Hash",
+    "compare_hash_placeholder": "e.g. $2b$12$KIX/3z5Z1a8f5d9Q0j1u6O",
+    "compare_hash_plain": "String to Compare",
+    "compare_success": "Password match!",
+    "compare_failure": "Password do not match."
   }
 }

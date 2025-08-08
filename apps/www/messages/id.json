@@ -6,11 +6,31 @@
     }
   },
   "home": {
-    "my_name_is": "Nama saya adalah",
+    "my_name_is": "Halo! 👋 Nama saya",
     "i_am_a": "Saya seorang",
     "fullstack_developer": "Full Stack Developer",
     "frontend_developer": "Frontend Developer",
     "backend_developer": "Backend Developer",
     "send_me_email": "Kirimi saya email."
+  },
+  "bcrypt_generator": {
+    "title": "Bcrypt Generator",
+    "description": "Hasilkan hash Bcrypt untuk kata sandi Anda.",
+    "password_label": "Masukkan String untuk Di-hash",
+    "hash_label": "Hash yang Dihasilkan",
+    "password_placeholder": "e.g. mypassword123",
+    "salt": "Salt",
+    "generate_button": "Hasilkan Hash",
+    "copy_button": "Salin ke Clipboard",
+    "copy_success": "Hash disalin ke clipboard!",
+
+    "compare_title": "Bandingkan Kata Sandi yang Terenkripsi",
+    "compare_description": "Periksa apakah kata sandi cocok dengan hash Bcrypt.",
+    "compare_password_label": "Kata Sandi yang Terenkripsi",
+    "compare_hash_label": "Masukkan Hash Bcrypt",
+    "compare_hash_placeholder": "e.g. $2b$12$KIX/3z5Z1a8f5d9Q0j1u6O",
+    "compare_hash_plain": "String yang Akan Dibandingkan",
+    "compare_success": "Kata sandi cocok!",
+    "compare_failure": "Kata sandi tidak cocok."
   }
 }

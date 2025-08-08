@@ -5,6 +5,7 @@ import {
   ChevronDown,
   ChevronDownIcon,
   ChevronRightIcon,
+  ExternalLinkIcon,
   MenuIcon,
   XIcon,
 } from "lucide-react";
@@ -16,6 +17,7 @@ type BaseMenu = {
   title: string | React.ReactNode;
   href?: string;
   onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
+  external?: boolean;
 };
 
 type Menu = BaseMenu & {
@@ -38,10 +40,51 @@ export default function Header() {
   }
 
   const menus: Menu[] = [
-    { title: "Home", href: "#" },
-    { title: "Projects", href: "#" },
-    { title: "About", href: "#" },
-    { title: "Contact Me", href: "#" },
+    { title: "Home", href: `/` },
+    {
+      title: "Packages",
+      submenu: [
+        {
+          title: "🌐 hono-intl",
+          href: "https://github.com/mimamch/hono-intl",
+          external: true,
+        },
+        {
+          title: "⭐️ wa-gateway",
+          href: "https://github.com/mimamch/wa-gateway",
+          external: true,
+        },
+        {
+          title: "⭐️ wa-multi-session",
+          href: "https://github.com/mimamch/wa-multi-session",
+          external: true,
+        },
+      ],
+    },
+    {
+      title: "Projects",
+      submenu: [
+        {
+          title: "🚀 Notizy",
+          href: "https://notizy.noxydigital.com",
+          external: true,
+        },
+        {
+          title: "📱 Baipai QRIS",
+          href: "https://play.google.com/store/apps/details?id=id.dibisnis.bai",
+          external: true,
+        },
+      ],
+    },
+    {
+      title: "Tools",
+      submenu: [
+        {
+          title: "🔐 Bcrypt Generator",
+          href: "/tools/bcrypt-generator",
+        },
+      ],
+    },
     {
       title: t("header.language"),
       submenu: [
@@ -72,9 +115,11 @@ export default function Header() {
         ></div>
       )}
       <nav className="relative">
-        <div className="flex justify-between rounded-full bg-gray-100/80 px-4 py-2 shadow-lg before:absolute before:inset-0 before:z-[-1] before:rounded-full before:backdrop-blur-sm dark:border-2 dark:bg-gray-900/80">
+        <div className="flex justify-between rounded-full bg-gray-100/80 px-4 py-3 shadow-lg before:absolute before:inset-0 before:z-[-1] before:rounded-full before:backdrop-blur-sm dark:border-2 dark:bg-gray-900/80">
           <Link href={"/"}>
-            <span className="text-lg font-semibold">{t("header.title")}</span>
+            <span className="bg-gradient-to-br from-yellow-500 via-red-500 to-blue-500 bg-clip-text text-lg font-bold text-transparent">
+              {t("header.title")}
+            </span>
           </Link>
 
           <div className="hidden md:flex">
@@ -94,10 +139,21 @@ export default function Header() {
                               <li key={i}>
                                 <Link
                                   href={item.href ?? ""}
+                                  target={item.external ? "_blank" : undefined}
+                                  rel={
+                                    item.external
+                                      ? "noreferrer noopener"
+                                      : undefined
+                                  }
                                   className="block text-nowrap rounded px-2 py-1 transition duration-200 hover:underline"
                                   onClick={item.onClick}
                                 >
-                                  {item.title}
+                                  {item.title}{" "}
+                                  {item.external && (
+                                    <span className="">
+                                      <ExternalLinkIcon className="mb-1 inline-flex size-4" />
+                                    </span>
+                                  )}
                                 </Link>
                               </li>
                             ))}
@@ -111,10 +167,17 @@ export default function Header() {
                   <li key={index}>
                     <Link
                       href={menu.href ?? ""}
+                      target={menu.external ? "_blank" : undefined}
+                      rel={menu.external ? "noreferrer noopener" : undefined}
                       className="block text-nowrap rounded px-2 py-1 transition duration-200 hover:underline"
                       onClick={menu.onClick}
                     >
-                      {menu.title}
+                      {menu.title}{" "}
+                      {menu.external && (
+                        <span className="">
+                          <ExternalLinkIcon className="mb-1 inline-flex size-4" />
+                        </span>
+                      )}
                     </Link>
                   </li>
                 );
@@ -164,10 +227,17 @@ function RenderMenu({ menu }: { menu: Menu }) {
     return (
       <Link
         href={menu.href ?? ""}
-        className="flex rounded px-2 py-1 transition duration-200 hover:underline"
+        target={menu.external ? "_blank" : undefined}
+        rel={menu.external ? "noreferrer noopener" : undefined}
+        className="rounded px-2 py-1 transition duration-200 hover:underline"
         onClick={menu.onClick}
       >
-        {menu.title}
+        {menu.title}{" "}
+        {menu.external && (
+          <span className="">
+            <ExternalLinkIcon className="mb-1 inline-flex size-4" />
+          </span>
+        )}
       </Link>
     );
   }
@@ -202,10 +272,17 @@ function RenderSubMenu({ submenu }: { submenu: BaseMenu[] }) {
         <li key={index}>
           <Link
             href={item.href ?? ""}
+            target={item.external ? "_blank" : undefined}
+            rel={item.external ? "noreferrer noopener" : undefined}
             className="block rounded px-2 py-1 transition duration-200 hover:underline"
             onClick={item.onClick}
           >
-            {item.title}
+            {item.title}{" "}
+            {item.external && (
+              <span className="">
+                <ExternalLinkIcon className="mb-1 inline-flex size-4" />
+              </span>
+            )}
           </Link>
         </li>
       ))}
