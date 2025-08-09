@@ -40,9 +40,9 @@ export default function Header() {
   }
 
   const menus: Menu[] = [
-    { title: "Home", href: `/` },
+    { title: t("header.home"), href: `/` },
     {
-      title: "Packages",
+      title: t("header.packages"),
       submenu: [
         {
           title: "🌐 hono-intl",
@@ -62,7 +62,7 @@ export default function Header() {
       ],
     },
     {
-      title: "Projects",
+      title: t("header.projects"),
       submenu: [
         {
           title: "🚀 Notizy",
@@ -77,7 +77,7 @@ export default function Header() {
       ],
     },
     {
-      title: "Tools",
+      title: t("header.tools"),
       submenu: [
         {
           title: "🔐 Bcrypt Generator",
@@ -100,6 +100,83 @@ export default function Header() {
           onClick(e) {
             e.preventDefault();
             onLocaleChange("id");
+          },
+        },
+        {
+          title: "Basa Jawa 🇮🇩",
+          onClick(e) {
+            e.preventDefault();
+            onLocaleChange("jv");
+          },
+        },
+        {
+          title: "Español 🇪🇸",
+          onClick(e) {
+            e.preventDefault();
+            onLocaleChange("es");
+          },
+        },
+        {
+          title: "Français 🇫🇷",
+          onClick(e) {
+            e.preventDefault();
+            onLocaleChange("fr");
+          },
+        },
+        {
+          title: "Deutsch 🇩🇪",
+          onClick(e) {
+            e.preventDefault();
+            onLocaleChange("de");
+          },
+        },
+        {
+          title: "Português 🇵🇹",
+          onClick(e) {
+            e.preventDefault();
+            onLocaleChange("pt");
+          },
+        },
+        {
+          title: "Русский 🇷🇺",
+          onClick(e) {
+            e.preventDefault();
+            onLocaleChange("ru");
+          },
+        },
+        {
+          title: "日本語 🇯🇵",
+          onClick(e) {
+            e.preventDefault();
+            onLocaleChange("ja");
+          },
+        },
+        {
+          title: "한국어 🇰🇷",
+          onClick(e) {
+            e.preventDefault();
+            onLocaleChange("ko");
+          },
+        },
+        {
+          title: "中文 🇨🇳",
+          onClick(e) {
+            e.preventDefault();
+            onLocaleChange("zh");
+          },
+        },
+        {
+          title: "العربية 🇸🇦",
+          onClick(e) {
+            e.preventDefault();
+            onLocaleChange("ar");
+          },
+        },
+        {
+          title: "हिन्दी 🇮🇳",
+          onClick(e) {
+            e.preventDefault();
+            onLocaleChange("hi");
           },
         },
       ],

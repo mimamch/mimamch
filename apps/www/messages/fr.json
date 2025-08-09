@@ -1,0 +1,42 @@
+{
+  "layouts": {
+    "header": {
+      "title": "mimamch",
+      "language": "Français 🇫🇷",
+      "home": "Accueil",
+      "packages": "Paquets",
+      "projects": "Projets",
+      "tools": "Outils"
+    }
+  },
+  "home": {
+    "my_name_is": "Salut ! 👋 Mon nom est",
+    "my_name": "Muhammad Imam Choirudin",
+    "i_am_a": "Je suis un",
+    "fullstack_developer": "Développeur Full Stack",
+    "frontend_developer": "Développeur Frontend",
+    "backend_developer": "Développeur Backend",
+    "send_me_email": "Envoyez-moi un email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "bcrypt_generator": {
+    "title": "Générateur Bcrypt",
+    "description": "Générez des hachages Bcrypt pour vos mots de passe.",
+    "password_label": "Entrez la Chaîne à Hacher",
+    "password_placeholder": "ex. monmotdepasse123",
+    "hash_label": "Hachage Généré",
+    "salt": "Salt",
+    "generate_button": "Générer le Hachage",
+    "copy_button": "Copier dans le Presse-papiers",
+    "copy_success": "Hachage copié dans le presse-papiers !",
+    "compare_title": "Comparer le Mot de Passe Chiffré",
+    "compare_description": "Vérifiez si un mot de passe correspond à un hachage Bcrypt.",
+    "compare_password_label": "Mot de Passe Chiffré",
+    "compare_hash_label": "Entrez le Hachage Bcrypt",
+    "compare_hash_placeholder": "ex. $2b$12$KIX/3z5Z1a8f5d9Q0j1u6O",
+    "compare_hash_plain": "Chaîne à Comparer",
+    "compare_success": "Le mot de passe correspond !",
+    "compare_failure": "Le mot de passe ne correspond pas."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "layouts": {
+    "header": {
+      "title": "mimamch",
+      "language": "日本語 🇯🇵",
+      "home": "ホーム",
+      "packages": "パッケージ",
+      "projects": "プロジェクト",
+      "tools": "ツール"
+    }
+  },
+  "home": {
+    "my_name_is": "こんにちは！👋 私の名前は",
+    "my_name": "Muhammad Imam Choirudin",
+    "i_am_a": "私は",
+    "fullstack_developer": "フルスタック開発者",
+    "frontend_developer": "フロントエンド開発者",
+    "backend_developer": "バックエンド開発者",
+    "send_me_email": "メールを送ってください",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "bcrypt_generator": {
+    "title": "Bcryptジェネレーター",
+    "description": "パスワードのBcryptハッシュを生成します。",
+    "password_label": "ハッシュ化する文字列を入力",
+    "password_placeholder": "例: mypassword123",
+    "hash_label": "生成されたハッシュ",
+    "salt": "ソルト",
+    "generate_button": "ハッシュを生成",
+    "copy_button": "クリップボードにコピー",
+    "copy_success": "ハッシュがクリップボードにコピーされました！",
+    "compare_title": "暗号化パスワードの比較",
+    "compare_description": "パスワードがBcryptハッシュと一致するかを確認します。",
+    "compare_password_label": "暗号化パスワード",
+    "compare_hash_label": "Bcryptハッシュを入力",
+    "compare_hash_placeholder": "例: $2b$12$KIX/3z5Z1a8f5d9Q0j1u6O",
+    "compare_hash_plain": "比較する文字列",
+    "compare_success": "パスワードが一致します！",
+    "compare_failure": "パスワードが一致しません。"
+  }
+}

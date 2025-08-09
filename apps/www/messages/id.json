@@ -2,16 +2,23 @@
   "layouts": {
     "header": {
       "title": "mimamch",
-      "language": "Indonesian 🇮🇩"
+      "language": "Indonesian 🇮🇩",
+      "home": "Beranda",
+      "packages": "Paket Library",
+      "projects": "Proyek",
+      "tools": "Alat"
     }
   },
   "home": {
     "my_name_is": "Halo! 👋 Nama saya",
+    "my_name": "Muhammad Imam Choirudin",
     "i_am_a": "Saya seorang",
     "fullstack_developer": "Full Stack Developer",
     "frontend_developer": "Frontend Developer",
     "backend_developer": "Backend Developer",
-    "send_me_email": "Kirimi saya email."
+    "send_me_email": "Kirimi saya email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
   },
   "bcrypt_generator": {
     "title": "Bcrypt Generator",

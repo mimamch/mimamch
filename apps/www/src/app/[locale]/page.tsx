@@ -50,7 +50,7 @@ export default function Home() {
                     showBorder={false}
                     className="w-fit text-start"
                   >
-                    Muhammad Imam Choirudin
+                    {t("my_name")}
                   </GradientText>
                 </h1>
                 <div className="mt-2 flex items-center gap-2">
@@ -95,7 +95,7 @@ export default function Home() {
                       height={20}
                       className="size-5"
                     />{" "}
-                    LinkedIn
+                    {t("linkedin")}
                   </Link>
                   <Link
                     href={"https://github.com/mimamch"}
@@ -110,7 +110,7 @@ export default function Home() {
                       height={20}
                       className="size-5"
                     />{" "}
-                    Github
+                    {t("github")}
                   </Link>
                 </div>
               </div>

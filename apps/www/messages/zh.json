@@ -1,0 +1,42 @@
+{
+  "layouts": {
+    "header": {
+      "title": "mimamch",
+      "language": "中文 🇨🇳",
+      "home": "首页",
+      "packages": "包",
+      "projects": "项目",
+      "tools": "工具"
+    }
+  },
+  "home": {
+    "my_name_is": "你好！👋 我的名字是",
+    "my_name": "Muhammad Imam Choirudin",
+    "i_am_a": "我是一名",
+    "fullstack_developer": "全栈开发者",
+    "frontend_developer": "前端开发者",
+    "backend_developer": "后端开发者",
+    "send_me_email": "给我发邮件",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "bcrypt_generator": {
+    "title": "Bcrypt 生成器",
+    "description": "为您的密码生成 Bcrypt 哈希值。",
+    "password_label": "输入要哈希的字符串",
+    "password_placeholder": "例如：mypassword123",
+    "hash_label": "生成的哈希值",
+    "salt": "盐值",
+    "generate_button": "生成哈希值",
+    "copy_button": "复制到剪贴板",
+    "copy_success": "哈希值已复制到剪贴板！",
+    "compare_title": "比较加密密码",
+    "compare_description": "检查密码是否与 Bcrypt 哈希值匹配。",
+    "compare_password_label": "加密密码",
+    "compare_hash_label": "输入 Bcrypt 哈希值",
+    "compare_hash_placeholder": "例如：$2b$12$KIX/3z5Z1a8f5d9Q0j1u6O",
+    "compare_hash_plain": "要比较的字符串",
+    "compare_success": "密码匹配！",
+    "compare_failure": "密码不匹配。"
+  }
+}

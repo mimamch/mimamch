@@ -1,0 +1,42 @@
+{
+  "layouts": {
+    "header": {
+      "title": "mimamch",
+      "language": "Español 🇪🇸",
+      "home": "Inicio",
+      "packages": "Paquetes",
+      "projects": "Proyectos",
+      "tools": "Herramientas"
+    }
+  },
+  "home": {
+    "my_name_is": "¡Hola! 👋 Mi nombre es",
+    "my_name": "Muhammad Imam Choirudin",
+    "i_am_a": "Soy un",
+    "fullstack_developer": "Desarrollador Full Stack",
+    "frontend_developer": "Desarrollador Frontend",
+    "backend_developer": "Desarrollador Backend",
+    "send_me_email": "Envíame un email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "bcrypt_generator": {
+    "title": "Generador Bcrypt",
+    "description": "Genera hashes Bcrypt para tus contraseñas.",
+    "password_label": "Ingresa la Cadena a Hashear",
+    "password_placeholder": "ej. micontraseña123",
+    "hash_label": "Hash Generado",
+    "salt": "Salt",
+    "generate_button": "Generar Hash",
+    "copy_button": "Copiar al Portapapeles",
+    "copy_success": "¡Hash copiado al portapapeles!",
+    "compare_title": "Comparar Contraseña Encriptada",
+    "compare_description": "Verifica si una contraseña coincide con un hash Bcrypt.",
+    "compare_password_label": "Contraseña Encriptada",
+    "compare_hash_label": "Ingresa Hash Bcrypt",
+    "compare_hash_placeholder": "ej. $2b$12$KIX/3z5Z1a8f5d9Q0j1u6O",
+    "compare_hash_plain": "Cadena a Comparar",
+    "compare_success": "¡La contraseña coincide!",
+    "compare_failure": "La contraseña no coincide."
+  }
+}

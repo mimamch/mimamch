@@ -2,16 +2,23 @@
   "layouts": {
     "header": {
       "title": "mimamch",
-      "language": "English 🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      "language": "English 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "home": "Home",
+      "packages": "Packages",
+      "projects": "Projects",
+      "tools": "Tools"
     }
   },
   "home": {
     "my_name_is": "Hi there! 👋 My name is",
+    "my_name": "Muhammad Imam Choirudin",
     "i_am_a": "I'm a",
     "fullstack_developer": "Full Stack Developer",
     "frontend_developer": "Frontend Developer",
     "backend_developer": "Backend Developer",
-    "send_me_email": "Send me email."
+    "send_me_email": "Send me email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
   },
   "bcrypt_generator": {
     "title": "Bcrypt Generator",

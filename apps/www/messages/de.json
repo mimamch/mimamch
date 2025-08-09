@@ -1,0 +1,42 @@
+{
+  "layouts": {
+    "header": {
+      "title": "mimamch",
+      "language": "Deutsch 🇩🇪",
+      "home": "Startseite",
+      "packages": "Pakete",
+      "projects": "Projekte",
+      "tools": "Werkzeuge"
+    }
+  },
+  "home": {
+    "my_name_is": "Hallo! 👋 Mein Name ist",
+    "my_name": "Muhammad Imam Choirudin",
+    "i_am_a": "Ich bin ein",
+    "fullstack_developer": "Full Stack Entwickler",
+    "frontend_developer": "Frontend Entwickler",
+    "backend_developer": "Backend Entwickler",
+    "send_me_email": "Senden Sie mir eine E-Mail",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "bcrypt_generator": {
+    "title": "Bcrypt Generator",
+    "description": "Generieren Sie Bcrypt-Hashes für Ihre Passwörter.",
+    "password_label": "String zum Hashen eingeben",
+    "password_placeholder": "z.B. meinpasswort123",
+    "hash_label": "Generierter Hash",
+    "salt": "Salt",
+    "generate_button": "Hash Generieren",
+    "copy_button": "In Zwischenablage Kopieren",
+    "copy_success": "Hash in Zwischenablage kopiert!",
+    "compare_title": "Verschlüsseltes Passwort Vergleichen",
+    "compare_description": "Überprüfen Sie, ob ein Passwort mit einem Bcrypt-Hash übereinstimmt.",
+    "compare_password_label": "Verschlüsseltes Passwort",
+    "compare_hash_label": "Bcrypt-Hash Eingeben",
+    "compare_hash_placeholder": "z.B. $2b$12$KIX/3z5Z1a8f5d9Q0j1u6O",
+    "compare_hash_plain": "String zum Vergleichen",
+    "compare_success": "Passwort stimmt überein!",
+    "compare_failure": "Passwort stimmt nicht überein."
+  }
+}

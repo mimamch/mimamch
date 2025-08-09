@@ -1,0 +1,42 @@
+{
+  "layouts": {
+    "header": {
+      "title": "mimamch",
+      "language": "Português 🇵🇹",
+      "home": "Início",
+      "packages": "Pacotes",
+      "projects": "Projetos",
+      "tools": "Ferramentas"
+    }
+  },
+  "home": {
+    "my_name_is": "Olá! 👋 Meu nome é",
+    "my_name": "Muhammad Imam Choirudin",
+    "i_am_a": "Eu sou um",
+    "fullstack_developer": "Desenvolvedor Full Stack",
+    "frontend_developer": "Desenvolvedor Frontend",
+    "backend_developer": "Desenvolvedor Backend",
+    "send_me_email": "Envie-me um email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "bcrypt_generator": {
+    "title": "Gerador Bcrypt",
+    "description": "Gere hashes Bcrypt para suas senhas.",
+    "password_label": "Digite a String para Hash",
+    "password_placeholder": "ex. minhasenha123",
+    "hash_label": "Hash Gerado",
+    "salt": "Salt",
+    "generate_button": "Gerar Hash",
+    "copy_button": "Copiar para Área de Transferência",
+    "copy_success": "Hash copiado para área de transferência!",
+    "compare_title": "Comparar Senha Criptografada",
+    "compare_description": "Verifique se uma senha corresponde a um hash Bcrypt.",
+    "compare_password_label": "Senha Criptografada",
+    "compare_hash_label": "Digite o Hash Bcrypt",
+    "compare_hash_placeholder": "ex. $2b$12$KIX/3z5Z1a8f5d9Q0j1u6O",
+    "compare_hash_plain": "String para Comparar",
+    "compare_success": "Senha corresponde!",
+    "compare_failure": "Senha não corresponde."
+  }
+}

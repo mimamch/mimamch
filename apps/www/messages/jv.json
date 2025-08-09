@@ -1,0 +1,42 @@
+{
+  "layouts": {
+    "header": {
+      "title": "mimamch",
+      "language": "Basa Jawa 🇮🇩",
+      "home": "Omah",
+      "packages": "Paket Library",
+      "projects": "Proyek",
+      "tools": "Piranti"
+    }
+  },
+  "home": {
+    "my_name_is": "Halo! 👋 Jenengku",
+    "my_name": "Muhammad Imam Choirudin",
+    "i_am_a": "Aku iku",
+    "fullstack_developer": "Full Stack Developer",
+    "frontend_developer": "Frontend Developer",
+    "backend_developer": "Backend Developer",
+    "send_me_email": "Kirimi aku email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "bcrypt_generator": {
+    "title": "Bcrypt Generator",
+    "description": "Gawe hash Bcrypt kanggo password sampeyan.",
+    "password_label": "Lebokno String kanggo di-hash",
+    "password_placeholder": "contone: passwordku123",
+    "hash_label": "Hash sing wis digawe",
+    "salt": "Salt",
+    "generate_button": "Gawe Hash",
+    "copy_button": "Salin menyang Clipboard",
+    "copy_success": "Hash wis disalin menyang clipboard!",
+    "compare_title": "Bandhingno Password sing Dienkripsi",
+    "compare_description": "Priksa apa password cocok karo hash Bcrypt.",
+    "compare_password_label": "Password sing Dienkripsi",
+    "compare_hash_label": "Lebokno Hash Bcrypt",
+    "compare_hash_placeholder": "contone: $2b$12$KIX/3z5Z1a8f5d9Q0j1u6O",
+    "compare_hash_plain": "String kanggo Dibandhingno",
+    "compare_success": "Password cocok!",
+    "compare_failure": "Password ora cocok."
+  }
+}

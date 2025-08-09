@@ -1,0 +1,42 @@
+{
+  "layouts": {
+    "header": {
+      "title": "mimamch",
+      "language": "العربية 🇸🇦",
+      "home": "الرئيسية",
+      "packages": "الحزم",
+      "projects": "المشاريع",
+      "tools": "الأدوات"
+    }
+  },
+  "home": {
+    "my_name_is": "مرحبا! 👋 اسمي",
+    "my_name": "Muhammad Imam Choirudin",
+    "i_am_a": "أنا",
+    "fullstack_developer": "مطور متكامل",
+    "frontend_developer": "مطور واجهة أمامية",
+    "backend_developer": "مطور خلفي",
+    "send_me_email": "أرسل لي بريد إلكتروني",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "bcrypt_generator": {
+    "title": "مولد Bcrypt",
+    "description": "قم بإنشاء تشفير Bcrypt لكلمات المرور الخاصة بك.",
+    "password_label": "أدخل النص للتشفير",
+    "password_placeholder": "مثال: mypassword123",
+    "hash_label": "التشفير المُولد",
+    "salt": "الملح",
+    "generate_button": "إنشاء التشفير",
+    "copy_button": "نسخ إلى الحافظة",
+    "copy_success": "تم نسخ التشفير إلى الحافظة!",
+    "compare_title": "مقارنة كلمة المرور المشفرة",
+    "compare_description": "تحقق من تطابق كلمة المرور مع تشفير Bcrypt.",
+    "compare_password_label": "كلمة المرور المشفرة",
+    "compare_hash_label": "أدخل تشفير Bcrypt",
+    "compare_hash_placeholder": "مثال: $2b$12$KIX/3z5Z1a8f5d9Q0j1u6O",
+    "compare_hash_plain": "النص للمقارنة",
+    "compare_success": "كلمة المرور متطابقة!",
+    "compare_failure": "كلمة المرور غير متطابقة."
+  }
+}
