@@ -6,7 +6,6 @@ Full stack engineer with experience in the tech industry. Passionate about build
 ## 📂 Open Source Project
 - [@mimamch/wa-multi-session](https://github.com/mimamch/wa-multi-session) - 🔥 Multi Session Whatsapp Library
 - [@mimamch/wa-gateway](https://github.com/mimamch/wa-gateway) - ⭐️ Multi Session Whatsapp Gateway API
-- [@mimamch/whatsapp](https://github.com/mimamch/whatsapp) - ⭐️ Whatsapp Business API Official Package Library
 - [@mimamch/news_app_clean_architecture](https://github.com/mimamch/news_app_clean_architecture) - ⭐️ Flutter Example for Clean Architecture
 
 
