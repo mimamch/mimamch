@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { NextIntlClientProvider } from "next-intl";
+import { Locale, NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "next-themes";
 import { Geist_Mono, Lexend } from "next/font/google";
 import { Toaster } from "react-hot-toast";
-import "./globals.css";
+import "../globals.css";
 
 const fontSans = Lexend({
   variable: "--font-sans",
@@ -62,6 +62,7 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
+
   return (
     <html lang={locale || "en"} suppressHydrationWarning>
       <body
@@ -73,7 +74,7 @@ export default async function RootLayout({
           enableSystem
           forcedTheme="dark"
         >
-          <NextIntlClientProvider>
+          <NextIntlClientProvider locale={locale as Locale}>
             {children}
             <Toaster />
           </NextIntlClientProvider>
