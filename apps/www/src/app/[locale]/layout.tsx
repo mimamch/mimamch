@@ -1,9 +1,15 @@
+import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { Locale, NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "next-themes";
 import { Geist_Mono, Lexend } from "next/font/google";
+import { locale } from "next/root-params";
 import { Toaster } from "react-hot-toast";
 import "../globals.css";
+
+// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
 
 const fontSans = Lexend({
   variable: "--font-sans",
@@ -54,17 +60,21 @@ export const metadata: Metadata = {
     "Muhammad Imam Choirudin is a Software Engineer and Open Source Enthusiast based in Indonesia. He specializes in Full Stack Development, with expertise in Next.js, React, and JavaScript.",
 };
 
+export async function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export default async function RootLayout({
   children,
-  params,
+  // params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  // params: Promise<{ locale: string }>;
 }>) {
-  const { locale } = await params;
+  const loc = await locale();
 
   return (
-    <html lang={locale || "en"} suppressHydrationWarning>
+    <html lang={loc || "en"} suppressHydrationWarning>
       <body
         className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased`}
       >
@@ -74,7 +84,7 @@ export default async function RootLayout({
           enableSystem
           forcedTheme="dark"
         >
-          <NextIntlClientProvider locale={locale as Locale}>
+          <NextIntlClientProvider locale={loc as Locale}>
             {children}
             <Toaster />
           </NextIntlClientProvider>
