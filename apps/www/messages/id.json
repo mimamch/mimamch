@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "description": "Software Engineer, penggemar Open Source. Berbasis di Indonesia.",
+    "abstract": "Muhammad Imam Choirudin adalah Software Engineer dan penggemar Open Source yang berbasis di Indonesia. Ia berfokus pada Full Stack Development, dengan keahlian di Next.js, React, dan JavaScript."
+  },
   "layouts": {
     "header": {
       "title": "mimamch",
@@ -40,7 +44,7 @@
     "compare_failure": "Kata sandi tidak cocok."
   },
   "email_sender": {
-    "title": "Pengirim Email",
+    "title": "Playground Pengirim Email",
     "description": "Kirim email menggunakan kredensial AWS SES, Resend, atau SMTP milik Anda sendiri. Kredensial Anda hanya diteruskan ke penyedia — tidak ada yang disimpan.",
     "provider": "Penyedia",
     "api_key": "API Key",

@@ -1,6 +1,7 @@
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { Locale, NextIntlClientProvider } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
 import { Geist_Mono, Lexend } from "next/font/google";
 import { locale } from "next/root-params";
@@ -21,47 +22,53 @@ const fontMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "mimamch | Muhammad Imam Choirudin",
-    template: "%s | mimamch",
-  },
-  description: "Software Engineer, Open Source Enthusiast. Based in Indonesia.",
-  openGraph: {
-    title: "mimamch | Muhammad Imam Choirudin",
-    description:
-      "Software Engineer, Open Source Enthusiast. Based in Indonesia.",
-    url: "https://mimamch.my.id",
-    siteName: "mimamch | Muhammad Imam Choirudin",
-    images: ["https://mimamch.my.id/og-image.png"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "mimamch | Muhammad Imam Choirudin",
-    description:
-      "Software Engineer, Open Source Enthusiast. Based in Indonesia.",
-    images: ["https://mimamch.my.id/og-image.png"],
-  },
-  keywords: [
-    "Muhammad Imam Choirudin",
-    "mimamch",
-    "Software Engineer",
-    "Full Stack Developer",
-    "Backend Developer",
-    "Frontend Developer",
-    "Open Source Enthusiast",
-    "Indonesia",
-    "Web Developer",
-    "Next.js",
-    "React",
-    "JavaScript",
-  ],
-  abstract:
-    "Muhammad Imam Choirudin is a Software Engineer and Open Source Enthusiast based in Indonesia. He specializes in Full Stack Development, with expertise in Next.js, React, and JavaScript.",
-};
+const SITE_NAME = "mimamch | Muhammad Imam Choirudin";
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "metadata" });
+  const description = t("description");
+
+  return {
+    title: { default: SITE_NAME, template: "%s | mimamch" },
+    description,
+    openGraph: {
+      title: SITE_NAME,
+      description,
+      url: "https://mimamch.my.id",
+      siteName: SITE_NAME,
+      images: ["https://mimamch.my.id/og-image.png"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: SITE_NAME,
+      description,
+      images: ["https://mimamch.my.id/og-image.png"],
+    },
+    keywords: [
+      "Muhammad Imam Choirudin",
+      "mimamch",
+      "Software Engineer",
+      "Full Stack Developer",
+      "Backend Developer",
+      "Frontend Developer",
+      "Open Source Enthusiast",
+      "Indonesia",
+      "Web Developer",
+      "Next.js",
+      "React",
+      "JavaScript",
+    ],
+    abstract: t("abstract"),
+  };
 }
 
 export default async function RootLayout({

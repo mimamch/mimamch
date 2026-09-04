@@ -84,7 +84,7 @@ export default function Header() {
           href: "/tools/bcrypt-generator",
         },
         {
-          title: "📧 Email Sender",
+          title: "📧 Email Sender Playground",
           href: "/tools/email-sender",
         },
       ],

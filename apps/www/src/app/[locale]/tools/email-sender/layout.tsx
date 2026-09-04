@@ -1,12 +1,15 @@
-// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
+import { Locale } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata = {
-  title: "Email Sender",
-  description:
-    "Send text or HTML emails through your own SMTP, AWS SES or Resend API key.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "email_sender" });
+  return { title: t("title"), description: t("description") };
+}
 
 export default function EmailSenderLayout({
   children,

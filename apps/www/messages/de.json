@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "description": "Software-Entwickler, Open-Source-Enthusiast. Ansässig in Indonesien.",
+    "abstract": "Muhammad Imam Choirudin ist Software-Entwickler und Open-Source-Enthusiast aus Indonesien. Er ist auf Full-Stack-Entwicklung spezialisiert, mit Expertise in Next.js, React und JavaScript."
+  },
   "layouts": {
     "header": {
       "title": "mimamch",
@@ -40,7 +44,7 @@
     "compare_failure": "Passwort stimmt nicht überein."
   },
   "email_sender": {
-    "title": "E-Mail-Versand",
+    "title": "E-Mail-Versand-Playground",
     "description": "Senden Sie eine E-Mail mit Ihren eigenen AWS SES-, Resend- oder SMTP-Zugangsdaten. Ihre Zugangsdaten werden nur an den Anbieter weitergeleitet — nichts wird gespeichert.",
     "provider": "Anbieter",
     "api_key": "API-Schlüssel",

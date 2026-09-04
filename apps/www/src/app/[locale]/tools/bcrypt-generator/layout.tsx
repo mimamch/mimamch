@@ -1,12 +1,20 @@
-import BcryptGeneratorPage from "./page";
+import { Locale } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "bcrypt_generator" });
+  return { title: t("title"), description: t("description") };
+}
 
-export const metadata = {
-  title: "Bcrypt Generator",
-  description: "Generate and compare Bcrypt hashes easily.",
-};
-
-export default BcryptGeneratorPage;
+export default function BcryptGeneratorLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return children;
+}

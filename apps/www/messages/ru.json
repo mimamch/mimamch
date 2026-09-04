@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "description": "Инженер-программист, энтузиаст открытого кода. Живёт в Индонезии.",
+    "abstract": "Muhammad Imam Choirudin — инженер-программист и энтузиаст открытого кода из Индонезии. Он специализируется на Full Stack-разработке и владеет Next.js, React и JavaScript."
+  },
   "layouts": {
     "header": {
       "title": "mimamch",
@@ -40,7 +44,7 @@
     "compare_failure": "Пароль не совпадает."
   },
   "email_sender": {
-    "title": "Отправка Email",
+    "title": "Playground отправки Email",
     "description": "Отправьте письмо, используя собственные учётные данные AWS SES, Resend или SMTP. Ваши учётные данные только передаются провайдеру — ничего не сохраняется.",
     "provider": "Провайдер",
     "api_key": "API-ключ",

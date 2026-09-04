@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "description": "소프트웨어 엔지니어, 오픈 소스 애호가. 인도네시아 거주.",
+    "abstract": "Muhammad Imam Choirudin은 인도네시아에 거주하는 소프트웨어 엔지니어이자 오픈 소스 애호가입니다. Next.js, React, JavaScript를 중심으로 풀스택 개발을 전문으로 합니다."
+  },
   "layouts": {
     "header": {
       "title": "mimamch",
@@ -40,7 +44,7 @@
     "compare_failure": "비밀번호가 일치하지 않습니다."
   },
   "email_sender": {
-    "title": "이메일 보내기",
+    "title": "이메일 보내기 플레이그라운드",
     "description": "본인의 AWS SES, Resend 또는 SMTP 자격 증명으로 이메일을 보냅니다. 자격 증명은 제공업체로 전달될 뿐 저장되지 않습니다.",
     "provider": "제공업체",
     "api_key": "API 키",

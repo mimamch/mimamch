@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "description": "软件工程师，开源爱好者。常驻印度尼西亚。",
+    "abstract": "Muhammad Imam Choirudin 是一位常驻印度尼西亚的软件工程师和开源爱好者。他专注于全栈开发，精通 Next.js、React 和 JavaScript。"
+  },
   "layouts": {
     "header": {
       "title": "mimamch",
@@ -40,7 +44,7 @@
     "compare_failure": "密码不匹配。"
   },
   "email_sender": {
-    "title": "邮件发送器",
+    "title": "邮件发送器 Playground",
     "description": "使用您自己的 AWS SES、Resend 或 SMTP 凭证发送邮件。您的凭证仅转发给服务商，不会被保存。",
     "provider": "服务商",
     "api_key": "API 密钥",

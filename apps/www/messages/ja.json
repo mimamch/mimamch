@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "description": "ソフトウェアエンジニア、オープンソース愛好家。インドネシア在住。",
+    "abstract": "Muhammad Imam Choirudin はインドネシア在住のソフトウェアエンジニアであり、オープンソース愛好家です。Next.js、React、JavaScript を得意とし、フルスタック開発を専門としています。"
+  },
   "layouts": {
     "header": {
       "title": "mimamch",
@@ -40,7 +44,7 @@
     "compare_failure": "パスワードが一致しません。"
   },
   "email_sender": {
-    "title": "メール送信",
+    "title": "メール送信プレイグラウンド",
     "description": "ご自身の AWS SES、Resend、または SMTP の認証情報でメールを送信します。認証情報はプロバイダーに中継されるだけで、保存されません。",
     "provider": "プロバイダー",
     "api_key": "API キー",
