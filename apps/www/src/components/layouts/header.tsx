@@ -83,6 +83,10 @@ export default function Header() {
           title: "🔐 Bcrypt Generator",
           href: "/tools/bcrypt-generator",
         },
+        {
+          title: "📧 Email Sender",
+          href: "/tools/email-sender",
+        },
       ],
     },
     {

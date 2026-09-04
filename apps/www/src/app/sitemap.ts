@@ -10,6 +10,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(buildDate),
       path: "/tools/bcrypt-generator",
     },
+    {
+      lastModified: new Date(buildDate),
+      path: "/tools/email-sender",
+    },
   ];
 
   return [

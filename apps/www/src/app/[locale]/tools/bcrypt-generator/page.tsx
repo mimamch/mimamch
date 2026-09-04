@@ -42,9 +42,9 @@ export default function BcryptGeneratorPage() {
       <Header />
       <main className="">
         <div className="relative py-8">
-          <div className="container relative mx-auto flex w-full items-center">
+          <div className="container relative mx-auto flex w-full items-center px-4">
             <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-2">
-              <div className="backdrop-blur-xs m-4 w-full rounded-lg border bg-slate-900/90 p-8 shadow-lg">
+              <div className="backdrop-blur-xs w-full rounded-lg border bg-slate-900/90 p-8 shadow-lg">
                 <h1 className="mb-2 text-2xl font-bold">{t("title")}</h1>
                 <p className="mb-6 text-sm">{t("description")}</p>
                 <div className="mb-4 grid grid-cols-12 gap-4">
@@ -103,7 +103,7 @@ export default function BcryptGeneratorPage() {
               </div>
 
               {/* compare */}
-              <div className="backdrop-blur-xs m-4 w-full rounded-lg border bg-slate-900/90 p-8 shadow-lg">
+              <div className="backdrop-blur-xs w-full rounded-lg border bg-slate-900/90 p-8 shadow-lg">
                 <h1 className="mb-4 text-2xl font-bold">
                   {t("compare_title")}
                 </h1>
